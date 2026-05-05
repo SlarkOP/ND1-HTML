@@ -1,6 +1,6 @@
 # Projektas "Stellar Guide" (Žvaigždėto dangaus gidas)
 
-Nuoroda į projektą: [Nuoroda bus čia, kai įkelsite į GitHub]
+Nuoroda į projektą: [(https://slarkop.github.io/ND1-HTML/index.html)]
 
 ## Projekto funkcijos (Project features)
 
