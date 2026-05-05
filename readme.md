@@ -1,6 +1,7 @@
 # Projektas "Stellar Guide" (Žvaigždėto dangaus gidas)
 
-Nuoroda į projektą: [(https://slarkop.github.io/ND1-HTML/index.html)]
+Nuoroda į projektą: [Projektas "Stellar Guide"]
+(https://slarkop.github.io/ND1-HTML/index.html)
 
 ## Projekto funkcijos (Project features)
 
@@ -13,7 +14,7 @@ Nuoroda į projektą: [(https://slarkop.github.io/ND1-HTML/index.html)]
 
 ## Autorius (Author)
 
-[Davyd Pimenov]
+[Davyd Pimenov] (https://github.com/SlarkOP)
 VILNIUS TECH, Interneto technologijos.
 
 ## Kaip paleisti?
