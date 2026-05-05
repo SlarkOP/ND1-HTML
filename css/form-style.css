@@ -1,0 +1,138 @@
+/* Выравнивание секции формы */
+.form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px 60px; /* Отступ для хедера */
+}
+
+/* Контейнер самой формы (Стеклянная коробка) */
+.glass-form-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.form-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Стилизация групп элементов */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #a29bfe;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Стилизация текстовых полей и самого селекта */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  background: rgba(0, 0, 0, 0.4); /* Чуть темнее для контраста */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    background 0.3s;
+}
+
+.form-group select {
+  appearance: none; /* Прячем стандартную стрелку браузера */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  /* Рисуем свою стрелочку цвета #a29bfe через SVG */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a29bfe' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+  padding-right: 40px; /* Чтобы текст не наезжал на стрелку */
+}
+
+/* Добавляем фокус */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #a29bfe;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.form-group select option {
+  background-color: #0a0a14; /* Глубокий темный космический цвет вместо серого */
+  color: #ffffff;
+  font-family: "Exo 2", sans-serif;
+  padding: 10px;
+}
+
+/* Подсветка выбранного пункта */
+.form-group select option:checked {
+  background-color: #a29bfe;
+  color: #000;
+}
+
+/* Стилизация чекбокса */
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  margin-bottom: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+/* Кнопка отправки */
+.submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Exo 2", sans-serif;
+}
+
+.submit-btn:hover {
+  background: #a29bfe;
+  color: black;
+  border-color: #a29bfe;
+}

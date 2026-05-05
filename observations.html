@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registracija - Stellar Guide</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключаем основной CSS и новый для формы -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form-style.css" />
+  </head>
+
+  <body class="home-page">
+    <div class="overlay"></div>
+
+    <!-- Шапка (Navbar) -->
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">Stellar Guide</a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Pagrindinis</a></li>
+            <li><a href="planets.html">Planetos</a></li>
+            <li><a href="observations.html" class="active">Registracija</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основной контент: Форма -->
+    <main class="form-section">
+      <div class="container form-container">
+        <div class="glass-form-box">
+          <h1 class="gradient-text form-title">Prisijunk prie stebėjimo</h1>
+          <p class="form-subtitle">
+            Užpildykite formą ir gaukite kvietimą į artimiausią astronomijos
+            vakarą.
+          </p>
+
+          <!-- Обязательный элемент: Форма -->
+          <form action="#" method="get" class="observation-form">
+            <!-- Элемент 1: Текстовое поле -->
+            <div class="form-group">
+              <label for="name">Vardas ir Pavardė</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Įveskite savo vardą"
+                required
+              />
+            </div>
+
+            <!-- Элемент 2: Email -->
+            <div class="form-group">
+              <label for="email">El. paštas</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="pavyzdys@pastas.lt"
+                required
+              />
+            </div>
+
+            <!-- Элемент 3: Выпадающий список (Select) -->
+            <div class="form-group">
+              <label for="object">Ką norite pamatyti?</label>
+              <select id="object" name="object" required>
+                <option value="" disabled selected>Pasirinkite objektą</option>
+                <option value="moon">Mėnulio krateriai</option>
+                <option value="saturn">Saturno žiedai</option>
+                <option value="jupiter">Jupiteris ir jo palydovai</option>
+                <option value="deep-space">
+                  Giliojo kosmoso objektai (galaktikos)
+                </option>
+              </select>
+            </div>
+
+            <!-- Элемент 4: Checkbox -->
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label for="newsletter"
+                >Noriu gauti naujienas apie astronominius reiškinius</label
+              >
+            </div>
+
+            <!-- Кнопка отправки -->
+            <button type="submit" class="submit-btn glass-btn">
+              Registruotis
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+      <div class="container footer-content">
+        <div class="footer-info">
+          <p>&copy; 2026 STELLAR GUIDE</p>
+          <p>VILNIUS TECH | Interneto technologijos</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

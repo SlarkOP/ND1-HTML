@@ -1,0 +1,117 @@
+/* Основная секция */
+.planets-section {
+  padding: 120px 0 60px; /* Отступ сверху для хедера */
+  min-height: 100vh;
+}
+
+/* Сетка карточек */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+/* Стили карточки */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  border-color: #a29bfe;
+}
+
+/* Стили таблицы */
+.table-container {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.glass-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.glass-table th,
+.glass-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-table th {
+  color: #a29bfe;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* Исправляем горизонтальное выравнивание контейнера */
+.planets-container {
+  display: flex;
+  flex-direction: column; /* Элементы идут сверху вниз */
+  align-items: center; /* Выравниваем по центру */
+}
+
+/* Центрируем главный заголовок */
+.center-title {
+  text-align: center;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+/* Стилизация имен планет в карточках */
+.planet-name {
+  color: #a29bfe;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Делаем так, чтобы карточки растягивались на всю ширину контейнера */
+.cards-grid {
+  width: 100%;
+}
+
+/* Центрируем заголовок таблицы */
+.table-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* Делаем таблицу на всю ширину и красивее */
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Контейнер для картинки в карточке */
+.card-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Сама картинка планеты */
+.planet-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain; /* Чтобы картинка не искажалась */
+  filter: drop-shadow(0 0 15px rgba(162, 155, 254, 0.4)); /* Легкое свечение */
+  transition: transform 0.4s ease;
+}
+
+/* При наведении на карточку планета будет слегка увеличиваться */
+.glass-card:hover .planet-img {
+  transform: scale(1.1) rotate(5deg);
+}
