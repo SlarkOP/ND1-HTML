@@ -6,19 +6,17 @@
 
 body,
 html {
-  min-height: 100vh; /* Изменили height: 100% на min-height, чтобы страница могла растягиваться вниз */
+  min-height: 100vh; 
   font-family: "Exo 2", sans-serif;
   color: white;
   background-color: #050505;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden; /* Запрещаем только горизонтальный скролл (влево-вправо) */
-}
+  overflow-x: hidden; 
 
 .home-page {
   position: relative;
   background: #00000000;
-  /* Мы УДАЛИЛИ отсюда overflow: hidden; чтобы вертикальный скролл заработал */
 }
 
 .home-page::before {
@@ -32,13 +30,10 @@ html {
   background-size: cover;
   background-position: center;
 
-  /* Эффект размытия */
   filter: blur(4px);
 
-  /* Немного увеличиваем слой, чтобы убрать белые края от размытия */
   transform: scale(1.1);
 
-  /* Отправляем в самый низ по слоям */
   z-index: -1;
 }
 
@@ -52,7 +47,6 @@ html {
   z-index: 0;
 }
 
-/* Общий контейнер для выравнивания контента по центру */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -62,19 +56,17 @@ html {
   align-items: center;
 }
 
-/* Шапка сайта */
 .main-header {
   width: 100%;
   padding: 20px 0;
-  background: rgba(255, 255, 255, 0.03); /* Очень легкий фон */
-  backdrop-filter: blur(10px); /* Эффект размытия под меню */
+  background: rgba(255, 255, 255, 0.03); 
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: fixed;
   top: 0;
   z-index: 1000;
 }
 
-/* Стиль логотипа слева */
 .logo a {
   font-family: "Exo 2", sans-serif;
   font-size: 20px;
@@ -89,7 +81,6 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-/* Навигационное меню */
 .navbar ul {
   display: flex;
   list-style: none;
@@ -107,17 +98,17 @@ html {
 
 .navbar a:hover,
 .navbar a.active {
-  color: #a29bfe; /* Цвет акцента при наведении */
+  color: #a29bfe;
 }
 
 .hero-section {
   position: relative;
-  flex: 1; /* Занимает всё пространство */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  padding-top: 80px; /* Чтобы хедер не перекрывал контент */
+  padding-top: 80px;
 }
 
 .hero-content {
