@@ -1,13 +1,10 @@
-/* Выравнивание секции формы */
 .form-section {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px 20px 60px; /* Отступ для хедера */
-}
+  padding: 120px 20px 60px;
 
-/* Контейнер самой формы (Стеклянная коробка) */
 .glass-form-box {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
@@ -34,7 +31,6 @@
   margin-bottom: 30px;
 }
 
-/* Стилизация групп элементов */
 .form-group {
   margin-bottom: 20px;
   display: flex;
@@ -49,13 +45,12 @@
   letter-spacing: 1px;
 }
 
-/* Стилизация текстовых полей и самого селекта */
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group select {
   width: 100%;
   padding: 12px 15px;
-  background: rgba(0, 0, 0, 0.4); /* Чуть темнее для контраста */
+  background: rgba(0, 0, 0, 0.4); 
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   color: white;
@@ -68,19 +63,17 @@
 }
 
 .form-group select {
-  appearance: none; /* Прячем стандартную стрелку браузера */
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
-  /* Рисуем свою стрелочку цвета #a29bfe через SVG */
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a29bfe' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 15px center;
   background-size: 16px;
-  padding-right: 40px; /* Чтобы текст не наезжал на стрелку */
+  padding-right: 40px; 
 }
 
-/* Добавляем фокус */
 .form-group input:focus,
 .form-group select:focus {
   border-color: #a29bfe;
@@ -88,19 +81,17 @@
 }
 
 .form-group select option {
-  background-color: #0a0a14; /* Глубокий темный космический цвет вместо серого */
+  background-color: #0a0a14;
   color: #ffffff;
   font-family: "Exo 2", sans-serif;
   padding: 10px;
 }
 
-/* Подсветка выбранного пункта */
 .form-group select option:checked {
   background-color: #a29bfe;
   color: #000;
 }
 
-/* Стилизация чекбокса */
 .checkbox-group {
   flex-direction: row;
   align-items: center;
@@ -122,7 +113,6 @@
   height: 16px;
 }
 
-/* Кнопка отправки */
 .submit-btn {
   width: 100%;
   margin-top: 10px;
