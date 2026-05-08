@@ -1,0 +1,9 @@
+/* Šiame faile saugomos pagrindinės dizaino spalvos ir savybės */
+:root {
+  --primary-color: #a29bfe; /* Pagrindinė akcento spalva (šviesiai violetinė) */
+  --secondary-color: #6c5ce7; /* Tamsesnė akcento spalva gradientams */
+  --bg-dark: #050505; /* Pagrindinė fono spalva */
+  --glass-bg: rgba(255, 255, 255, 0.05); /* Stiklo efekto fonas */
+  --glass-border: rgba(255, 255, 255, 0.1); /* Stiklo efekto rėmelis */
+  --text-light: #ffffff; /* Standartinė teksto spalva */
+}

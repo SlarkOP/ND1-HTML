@@ -1,0 +1,65 @@
+/* Bazinė ND2 sekcijos stilizacija naudojant kintamuosius */
+.nd2-section {
+  padding: 120px 20px 60px;
+  min-height: 100vh;
+  color: var(--text-light);
+  position: relative;
+  z-index: 1;
+}
+
+/* --- RESPONSIVE CSS GRID (Galerijai) --- */
+.custom-gallery {
+  display: grid;
+  gap: 20px;
+  /* 1. Mobile First: telefone rodomas 1 stulpelis */
+  grid-template-columns: 1fr;
+}
+
+/* 2. Tablet (Planšetėms): nuo 768px pločio rodomi 2 stulpeliai */
+@media (min-width: 768px) {
+  .custom-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3. Desktop (Kompiuteriams): nuo 1024px pločio rodomi 3 stulpeliai */
+@media (min-width: 1024px) {
+  .custom-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Galerijos elemento stiklo efektas, naudojant variables.css */
+.gallery-item {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 15px;
+  padding: 10px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); /* Elemento padidinimas užvedus pelę */
+  border-color: var(--primary-color);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Kad nuotraukos neišsikraipytų */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* --- Vidinio lango (Modal) stilius --- */
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+}
