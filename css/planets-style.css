@@ -58,7 +58,8 @@
 .center-title {
   text-align: center;
   margin-bottom: 50px;
-  width: 100%;
+  width: fit-content;
+  z-index: 1;
 }
 
 .planet-name {
@@ -68,7 +69,6 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 
 .cards-grid {
   width: 100%;
