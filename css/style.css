@@ -6,13 +6,15 @@
 
 body,
 html {
-  min-height: 100vh; 
+  min-height: 100vh;
   font-family: "Exo 2", sans-serif;
   color: white;
   background-color: #050505;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden; 
+  overflow-x: hidden;
+
+  scrollbar-gutter: stable;
 }
 
 .home-page {
@@ -59,13 +61,26 @@ html {
 
 .main-header {
   width: 100%;
-  padding: 20px 0;
-  background: rgba(255, 255, 255, 0.03); 
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: fixed;
   top: 0;
   z-index: 1000;
+  padding: 0;
+}
+
+.main-header .container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo a {
@@ -80,25 +95,30 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1;
 }
 
-.navbar ul {
-  display: flex;
+.main-nav ul {
+  display: flex !important;
   list-style: none;
   gap: 30px;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-items: center;
 }
 
-.navbar a {
+.main-nav a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   transition: 0.3s;
+  line-height: 1;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.main-nav a:hover,
+.main-nav a.active {
   color: #a29bfe;
 }
 
@@ -192,4 +212,6 @@ html {
 
 .footer-info p {
   text-align: center;
+  margin: 0 !important;
+  line-height: 1.5;
 }
